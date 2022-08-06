@@ -1,7 +1,13 @@
 import React, { useState } from "react";
-import { HStack, VStack, Text, StackDivider, IconButton,
+import {
+    HStack,
+    VStack,
+    Text,
+    StackDivider,
+    IconButton,
     useDisclosure,
-    useToast, } from "@chakra-ui/react";
+    useToast,
+} from "@chakra-ui/react";
 import provinces from "../api/provinces";
 import { FiEdit, FiTrash2 } from 'react-icons/fi'
 import ModalEdit from "./modal/ModalEdit";
@@ -34,7 +40,7 @@ const Provinces = ({listProvinces, getProvince}) => {
             await provinces
                 .deleteProvince(deleteData)
                 toast({ 
-                    description: 'Data berhasil dihapus',
+                    description: 'Success to delete province',
                     position: 'top',
                     status: 'success',
                     duration: 2000

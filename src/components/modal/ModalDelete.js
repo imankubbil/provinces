@@ -24,7 +24,7 @@ const ModalDelete = ({isOpen, onClose, handleDelete}) => {
                     <ModalHeader>Update Province</ModalHeader>
                     <ModalCloseButton />
                     <ModalBody pb={6}>
-                        <Text>Apakah kamu yakin ingin menghapus ini?</Text>
+                        <Text>Are you sure you want to delete this?</Text>
                     </ModalBody>
 
                     <ModalFooter>
